@@ -1,0 +1,238 @@
+1 Iteration
+(Chapters 7, 8, 9 in zyBooks; Chapters 4 and 8 in How to Think Like a Computer Scientist)
+
+Define what is repetition in programs
+Allows for a group of operations to be performed multiple times
+Define what is one iteration
+Discuss how loops are defined based on iterations
+When is a loop needed?
+Apply and implement the 2 looping constructs supported in Python
+while
+Explicit progress towards the Boolean condition becoming false
+for
+Iterating over sequences
+range()
+When is one looping construct more appropriate than the other?
+Identify, apply, and implement the major loop patterns
+Looping until a general Boolean condition is met
+i.e. while bank_balance > 0:
+Looping for a certain number of repetitions, which is known before loop execution
+i.e. while count < 10:
+Looping until a special value is encountered
+i.e. a menu
+i.e. while choice != "q":
+Looping until a value within valid range is entered by user
+i.e. while is_valid == False:
+Apply and implement nested loops
+break statement
+What is an infinite loop?
+A loop which will execute "forever"
+Describe and apply compound (shorthand) assignment operators
+These include: +=, -=, *=, /=, //=, %=
+Provide an example of an off-by-one loop error
+2 File I/O
+(Chapter 10 in zyBooks; Chapter 11 in How to Think Like a Computer Scientist)
+
+What is a file object?
+A communication channel between the program and a file
+What is the 3-step file processing template?
+Open a file
+Process the file
+Close the file
+What is a file mode?
+What is a path?
+Relative path vs absolute path
+Apply open(), close(), readline(), readlines(), print(file=<file object>)and write()
+You should be able to open files for read and write modes
+Removing leading and trailing whitespace characters with strip()
+Iterating through files until the end of a file is reached
+for line in in_file.readlines():
+while line != "":
+Positioning in files (the file "cursor")
+Calling print() to write to a file
+3 Strings
+(Chapter 10 in zyBooks; Chapter 9 in How to Think Like a Computer Scientist)
+
+Define what is a string in Python
+A sequence of alphabetic, numeric, and special characters
+Declare and apply strings
+String concatenation
+String indexing
+0 based
+Valid indices
+Apply the built-in len() function
+Returns the length of a string
+Iterating over characters in a string
+String slicing
+Strings are immutable
+Strings cannot be changed
+String comparison
+Strings are compared by their Unicode values
+String searching
+Apply string methods
+strip()
+upper()
+lower()
+find()
+replace()
+others?
+Other topics
+Random number generation
+Import the random module
+Apply the random.randrange() function
+Pass in a starting integer and an ending integer + 1
+Apply the random.randint() function
+Pass in a starting integer and an ending integer
+turtle graphics and loops
+Recommended Strategy for Preparing for the Exam
+The exam questions will require you to solve problems in a variety of formats: defining key terms, evaluating expressions, writing code, determining the output of code, etc.
+
+I recommend that you use the following activities and materials to prepare for the exam:
+
+Review micro assignments, lab exercises, programming assignments, and problems solved in class
+These may well be your best resources. An excellent learning activity would be to re-solve the micro assignments, lab exercises, in class exercises, and programming assignments.
+Lesson notes and example code
+Read the textbook
+Read or re-read zyBooks chapters 7-10 and How to Think Like a Computer Scientist chapters 4, 8, 9, and 11.
+Extra Practice Problems
+1
+The following questions refer to the following program segment:
+
+In [ ]:
+g = 0
+s = 0
+i = 50
+t = 0
+while i > 0:
+    t = int(input())
+    s = s + t
+    if t < 0:
+        g = g + 1
+    i -= 1
+How many times is the loop body of the while statement executed?
+At the end of the execution of the loop, describe the value stored in variable s
+At the end of the execution of the loop, describe the value stored in variable g
+Modify the above code in order to make the code more readable and indicative of its purpose.
+2
+Write a program that uses a loop to print out every other letter in the upper case alphabet.
+
+3
+Given the following input file, sentence.txt:
+
+Coding
+in
+Python
+is
+SUPER
+FUN
+Write a program to do the following:
+
+Open an input file sentence.txt for reading
+Open an output file sentence_out.txt for writing
+Read each line in from the input file and write the following to the output file:
+Print the contents of the line followed by a comma
+Print the length of the line followed by a newline
+Example sentence_out.txt
+
+Coding, 6
+in, 2
+Python, 6
+is, 2
+SUPER, 5
+FUN, 3
+4
+Write a program to prompt the user to enter an integer that is even (for this problem, 0 is neither even nor odd). The code must ensure that en even number is entered. Once an even integer is entered, the program prints the integer to the screen.
+
+5
+Write a for loop that sums the squares of the odd integers from -111 to 333 inclusive.
+
+6
+The following questions refer to the following code: course = "CptS 111 Spring 2017"
+
+Write code to print the "2" in course
+Write code to print the "111" in course using the slice operator
+Write code to assign a new variable, new_course, course, but with "Summer" instead of "Spring"
+Write code to overwrite the string stored in course in all lower case letters
+Write code to assign a new variable, new_string, course, but with the "111" replaced with "121". Use the replace() method to do this.
+Write code to print the index of the "2". Use the find() method to do this.
+7
+Write code to open a file output.txt for writing. Then write pi from the math module to 2 decimal places to the file and close the file.
+
+8
+Rewrite the following code segment as an equivalent segment that uses a for loop.
+
+In [ ]:
+summ = 0
+next_val = 1
+bound = 10
+while next_val < bound:
+    summ += next_val + 1
+    next_val += 1
+print(summ)
+9
+Write a function called sum_multiples_of_2_5() that returns the sum of the integers in the range [1, 100] inclusive that are multiples of 2 AND 5.
+
+10
+(Tricky) The output below is from code with a variable called NUM_STARS set to 5 that determines the number of stars to print on each line (how? :) ). Write code using iterative statements that produces this output for any value of NUM_STARS.
+
+NUM_STARS 5:
+*****5
+0
+****4
+*1
+***3
+**2
+**2
+***3
+*1
+****4
+0
+*****5
+11
+What is printed by the following nested loop?
+
+In [ ]:
+for x in range(1, 5):
+    for y in range(x, x + 1, 1):
+        print("%d %d " %(x, y), end="")
+    print("")
+12
+Write code for a simple menu that displays the output below until 3 (quit) is entered by the user. If the user enters an invalid menu option, inform the user and re-prompt. Once a valid input choice is entered, display “Here are the rules” if 1 is chosen. If 2 is chosen display "Starting the game".
+
+Welcome to my game!
+1)    View the rules
+2)    Play the game
+3)    Quit
+13
+What is the output of the following code segment?
+
+In [ ]:
+for k in range(4, 0, -1):
+    for i in range(1, 5 - k + 1, 1):
+        print(".", end="")
+    for j in range(1, 2 * k, 1):
+        print("A", end="")
+    print("")
+14
+The following problem is adapted from problem 5.9 in Hanly and Koffman.
+
+Suppose you own a soda distribution that sells Pepsi (ID# 1), Dr. Pepper (ID# 2), Mountain Dew (ID# 3), and Crush (ID# 4) by the case.
+
+Write a program to:
+
+Read the case inventory from a file inventory.txt. In this file there are 4 numbers, one on each line, representing the number of cases for each soda in order of ID#.
+Display and implement the functionality for the following menu:
+Display current inventory
+Purchase cases
+Sell cases
+Exit
+Validate user input (i.e. there are enough cases in the inventory to sell and the menu choice is valid)
+MA17
+On a blank sheet of paper, write the following:
+
+Your full name
+Your TA name
+MA #17
+Individually (or in pairs), solve the above exam review problems that we didn't solve in class. Each correctly solved problem is worth 1 point. Each student needs to turn in their own solutions to get credit for MA17.
+
+To study for the exam, I recommend solving each problem on paper, then typing up your code and running it. You can check your work this way. Re-write your final, correct solutions in a neat manner to turn in for credit on MA17.

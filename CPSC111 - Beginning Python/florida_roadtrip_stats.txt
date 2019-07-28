@@ -1,0 +1,16 @@
+Spokane, WA to Yellowstone National Park, WY: 510.24 miles
+Yellowstone National Park, WY to Grand Teton National Park, WY: 29.54 miles
+Grand Teton National Park, WY to Salt Lake City, UT: 282.63 miles
+Salt Lake City, UT to Bryce Canyon National Park, UT: 268.16 miles
+Bryce Canyon National Park, UT to Grand Canyon, AZ: 283.87 miles
+Grand Canyon, AZ to Surprise, AZ: 226.25 miles
+Surprise, AZ to Panama City, FL: 1855.54 miles
+
+***Roadtrip Stats***
+Number of waypoints on roadtrip: 6
+Number of days on roadtrip: 8
+Total miles traveled on roadtrip: 3456.23
+Longest roadtrip distance between waypoints is Surprise, AZ to Panama City, FL: 1855.54
+Longest roadtrip days at one waypoint is Yellowstone National Park, WY: 2 days
+Average roadtrip distance between waypoints is: 493.75 miles
+Average roadtrip days at one waypoint: 1.33 days
